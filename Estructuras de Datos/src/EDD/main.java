@@ -21,7 +21,7 @@ public class main {
 		pila.desapilar();
 		System.out.println(pila.cima());
 		pila.desapilar();
-		*/
+	
 		System.out.println("Esta vacia esta pila?:" + pila.vacia());
 		
 		System.out.println("-------Cola-------");
@@ -56,8 +56,23 @@ public class main {
 		newpila.desapilar();
 		System.out.println(newpila.cima());
 		newpila.desapilar();
+		*/
 		
+		/*--------Arbol--------*/
+		Arbol abo = new Arbol();
+		abo.insertar(100);
+		abo.insertar (50);
+        abo.insertar (25);
+        abo.insertar (75);
+        abo.insertar (150);
 		
+        System.out.println ("Impresion preorden: ");
+        abo.imprimirPre ();
+        System.out.println ("Impresion entreorden: ");
+        abo.imprimirEntre ();
+        System.out.println ("Impresion postorden: ");
+        abo.imprimirPost (); 
+        
 	}
 
 }
